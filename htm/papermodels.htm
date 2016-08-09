@@ -1,0 +1,78 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="shortcut icon" href="http://fabacademy.org/archives/2015/images/favicon.ico">
+<title>Papermodels</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body link="black" alink="black" vlink="black">
+    
+<h2>Papermodels</h2>
+<p>You will need to install <a href = "https://www.blender.org/">Blender</a> and the <a href = "https://blenderartists.org/forum/showthread.php?186071-Export-Paper-Model">Papermodel Addon</a> for the workshop.<br>
+For the tutorial <a href ="https://www.gimp.org/">Gimp</a> and <a href = "https://inkscape.org/en/">Inkscape</a> are used for editing bitmaps and vector-graphics, but you can also use Photoshop and Illustrator.</p>
+    
+Download and install <a href = "https://www.blender.org/download/">Blender</a> and download the <a href = "https://blenderartists.org/forum/showthread.php?186071-Export-Paper-Model">paper-model plugin</a> (<a href ="https://raw.githubusercontent.com/addam/Export-Paper-Model-from-Blender/master/io_export_paper_model.py">direkt link</a>).<br>
+<p>Download and install <a href ="https://www.gimp.org/downloads/">Gimp</a>.</p>
+    <p><a href="gimp.htm">Prepare your images.</a></p>
+    <p>Download and install <a href = "https://inkscape.org/en/download/">Inkscape</a>.</p>
+
+ <p>   Once you have blender installed, you can install the papermodel plugin by going to <b>File &#8594 User preferences &#8594 Add-ons &#8594 Install from File</b> and choose <b>io_export_paper_model.py</b> that you downloaded from the link above.<br>
+Once it appears in the plugins, you still need to activate it by clicking the little checkmark on the right of it. 
+</p>
+    
+<p>For a Basic Introduction to Blender, have a look at <a href="blender-basics01.htm">this page.</a><br>
+    
+You should start by deleting the default cube (right-click for selecting, <kbd class="kbd">x</kbd> for deleting).<br>
+<p>Then you can either import the template (File &#8594 Import &#8594 Wavefront(.obj) &#8594 paperhead.obj) or design your own model.<br>
+The template already has a UV-map. If you start your own model, you will have to unwrap it.</p>
+<p>With your cursor in the 3D-View hit <kbd class="kbd">N</kbd> for opening the "numeric" side-panel.<br>
+Scroll down to "Background Images.<br>
+Check the mark and add the image we previously prepared to the front and right view.<br>
+Use the controlls for aligning it with the 3D-Model:</p>
+ <p><img src="../img/background_images.jpg"></p>
+<p>Adjust the mesh to the general proportions of your photos:<br>
+Enter "Edit-Mode" <kbd class="kbd">Tab</kbd> <br>
+Use the selection Tools (<kbd class="kbd">B</kbd>, <kbd class="kbd">C</kbd> or <kbd class="kbd">Shift</kbd>+<kbd class="kbd">right-click</kbd>) and the Grab-Key <kbd class="kbd">G</kbd> for moving the vertices to the right locations.<br>
+Try hitting <kbd class="kbd">O</kbd> before using grab and experiment rotating the mouse-wheel.
+    </p>
+Have another look at the <a href="blender-basics01.htm">Blender Basics</a> if you have difficulties.
+<p>
+Once you have your mesh aligned, find the "object-data"-tab in the "Properties-Window".
+<p><img src="../img/object_data.jpg"></p>
+</p>Add another UV-map (with the + Button) and name it "Front".<br>
+<p>Orient the model to the front view (View &#8594 Front, or Numpad 1)<br>
+Make sure you are in "Edit-Mode" <kbd class="kbd">Tab</kbd><br>
+Split your 3D-View in half vertically, by right-clicking on the upper border of the window and selecting "split window". <br>
+Change the right window to "UV/Image Editor" by clicking on the selector in the bottom-right corner.<br>
+You should be seeing something like this:</p>
+<img width= 600px, src="../img/uv_map_01.jpg"><br>
+<p>
+Make sure that your 3D-View says "Front Ortho" in the upper right corner:</p>
+ <p><img src="../img/fron_ortho.jpg"></p>
+<p>If it doesn't, use <kbd class="kbd">1</kbd> and <kbd class="kbd">5</kbd> until it does.</p> 
+</p>
+<p>Select everything <kbd class="kbd">A</kbd><br>
+In the "object-data"-tab ("Properties-Window") make sure that your new UV-map "Front" is selected.
+With your mouse in the 3D-View hit <kbd class="kbd">U</kbd> and select "Project from View".<br>
+The result should look like this:</p>
+<img src="../img/uv_map_front.jpg"><br>
+In the "UV/Image editor" open your picture and align it with your UV-map. <img src="../img/uv_map_open_image.jpg"><br> (<kbd class="kbd">A</kbd> select Everything, <kbd class="kbd">G</kbd> Grab, <kbd class="kbd">S</kbd> Scale). <br>
+You might have to repeat the "Project from View" if your pictur is not square. 
+</p>
+ <p><img src="../img/uv_map_front_01.jpg"></p>
+<p>Repeat the same steps for the side and back view:<br>
+Create a UV-map "right",<br>
+Put the 3D-View in the "right-view" <kbd class="kbd">3</kbd><br>
+With your mouse in the 3D-View hit <kbd class="kbd">U</kbd> and select "Project from View".<br>
+Open the picture and align your UV-map to it.</p>
+ <p><img src="../img/uv_map_right_01.jpg"></p>
+<p>Repeat the same for the "Back"</p>
+<p>Now we should have four UV-maps: Front, Right, Back and UV-map</p>
+<p>With all the maps made, we can switch to "Texture Paint mode</p>
+ <p><img src="../img/uv_map_front_01.jpg"></p>
+
+    
+192.168.3.10
+
+
+
+</div></body></html>

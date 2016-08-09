@@ -20,7 +20,7 @@ pre {
 }
 
 p {
-	line-height: 24px;
+	
 }
 li {
 	line-height: 26px;
@@ -47,9 +47,7 @@ h1 {
 h2 {
 	color: #000;
 	padding-top: 10px;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #CCC;
+
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 26px;
 }
@@ -85,6 +83,7 @@ a {
 	color: #000;
 	font-style: normal;
 	font-style: normal;
+    text-decoration: none;
 }
 a:hover {
 	border-bottom-width: 1px;
