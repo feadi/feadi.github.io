@@ -50,12 +50,12 @@ Make sure that your 3D-View says "Front Ortho" in the upper right corner:</p>
  <p><img src="../img/fron_ortho.jpg"></p>
 <p>If it doesn't, use <kbd class="kbd">1</kbd> and <kbd class="kbd">5</kbd> until it does.</p> 
 </p>
-<p>Select everything <kbd class="kbd">A</kbd><br>
+<p>Select everything <kbd class="kbd">A</kbd><br>.
 In the "object-data"-tab ("Properties-Window") make sure that your new UV-map "Front" is selected.
 With your mouse in the 3D-View hit <kbd class="kbd">U</kbd> and select "Project from View".<br>
 The result should look like this:</p>
 <img src="../img/uv_map_front.jpg"><br>
-In the "UV/Image editor" open your picture and align it with your UV-map. <img src="../img/uv_map_open_image.jpg"><br> (<kbd class="kbd">A</kbd> select Everything, <kbd class="kbd">G</kbd> Grab, <kbd class="kbd">S</kbd> Scale). <br>
+In the "UV/Image editor" open your picture and align it with your UV-map. <img src="../img/uv_map_open_image.jpg"><br> (<kbd class="kbd">A</kbd> select everything, <kbd class="kbd">G</kbd> Grab, <kbd class="kbd">S</kbd> Scale). <br>
 You might have to repeat the "Project from View" if your pictur is not square. 
 </p>
  <p><img src="../img/uv_map_front_01.jpg"></p>
@@ -68,11 +68,50 @@ Open the picture and align your UV-map to it.</p>
 <p>Repeat the same for the "Back"</p>
 <p>Now we should have four UV-maps: Front, Right, Back and UV-map</p>
 <p>With all the maps made, we can switch to "Texture Paint mode</p>
- <p><img src="../img/uv_map_front_01.jpg"></p>
-
-    
-192.168.3.10
-
-
-
+<p><img src="../img/texture_paint_01.jpg"></p>
+<p>If it isn't already, open the right side-panel by pressing <kbd class="kbd">T</kbd></p>
+<p>Your model will appear in pink.</p>
+Add a new Material in the Properties-Window by clicking on "New":<br>
+<p><img src="../img/texture_paint_02.jpg"></p> 
+<p>Add a "Paint-Slot" and choose "Diffuse Color". Keep the default settings.</p>
+<p><img src="../img/texture_paint_03.jpg"></p>
+<p>Click on the sphere and choose the clone-brush:</p>
+<p><img src="../img/texture_paint_04.jpg"></p>
+<p>Check "Clone from paint slot" </p>
+<p><img src="../img/texture_paint_05.jpg"></p>
+<p>In the UV/Image-Editor click on "New" for creating a new image:</p>
+<p><img src="../img/texture_paint_06.jpg"></p>
+<p>Name it "unwrap" and keep the default settings.<br>
+Select the second tab called "Slot".</p>
+<p><img src="../img/texture_paint_07.jpg"></p>
+Switch "Material" to "Image" and select the "unwrap" as Canvas image.<br>
+Back in the "Tools"-Tab, choose your image as "Source Clone Image" and "front" as the UV-map.
+<p><img src="../img/texture_paint_09.jpg"></p>
+<p>Now you can start to clone brush your front view onto the model.</p>
+<p><img src="../img/texture_paint_10.jpg"></p>
+<p>Once you are finished, switch the "Source Clone UV-map" to "right" and start painting on the right side. <br>
+If you turn on "X" in "Symmetry", it will mirror to the left side.
+</p>
+<p><img src="../img/texture_paint_11.jpg"></p>
+<p>Same procedure for the "back".<br>
+Once you finished painting all arround, you should be seeing something like this:<br>
+<p><img src="../img/texture_paint_12.jpg"></p>
+<p>Now save your texture:</p>
+<p><img src="../img/texture_paint_13.jpg"></p>
+<p>And add the texture to your material:</p>
+<p><img src="../img/texture_paint_14.jpg"></p>
+<p>Now we can start using the Papermodel-plugin. It is located on the lowest Tab on the left:</p>
+<p><img src="../img/papermodel01.jpg"></p>
+<p>Click on "Unfold" and then on "Export Paper model".</p>
+<p>These are the settings in the export dialog:</p>
+<p><img src="../img/papermodel02.jpg"></p>
+<p>Scale 1:100<br>
+Page Size: A3<br>
+Textures: from Materials</p>
+<p>Choose a filename ending in "svg"<br>
+and open the resulting image in Inkscape:</p>
+<p><img src="../img/inkscape_01.jpg"></p>
+<p>Now you only need to add the cutmarks for the Roland GX-24<br>
+You should also keep the margins according to this <a href="../img/A3_paperhead_template.svg">template</a>
+<p><img src="../img/inkscape_02.jpg"></p>
 </div></body></html>
