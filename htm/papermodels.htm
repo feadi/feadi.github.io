@@ -10,7 +10,7 @@
 <p>You will need to install <a href = "https://www.blender.org/">Blender</a> and the <a href = "https://blenderartists.org/forum/showthread.php?186071-Export-Paper-Model">Papermodel Addon</a> for the workshop.<br>
 For the tutorial <a href ="https://www.gimp.org/">Gimp</a> and <a href = "https://inkscape.org/en/">Inkscape</a> are used for editing bitmaps and vector-graphics, but you can also use Photoshop and Illustrator.</p>
     
-Download and install <a href = "https://www.blender.org/download/">Blender</a> and download the <a href = "https://blenderartists.org/forum/showthread.php?186071-Export-Paper-Model">paper-model plugin</a> (<a href ="https://raw.githubusercontent.com/addam/Export-Paper-Model-from-Blender/master/io_export_paper_model.py">direkt link</a>).<br>
+Download and install <a href = "https://www.blender.org/download/">Blender</a> and download the <a href = "https://blenderartists.org/forum/showthread.php?186071-Export-Paper-Model">paper-model plugin</a> (<a href ="https://raw.githubusercontent.com/addam/Export-Paper-Model-from-Blender/master/io_export_paper_model.py">direct link</a>).<br>
 <p>Download and install <a href ="https://www.gimp.org/downloads/">Gimp</a>.</p>
     <p><a href="gimp.htm">Prepare your images.</a></p>
     <p>Download and install <a href = "https://inkscape.org/en/download/">Inkscape</a>.</p>
@@ -100,7 +100,7 @@ Once you finished painting all arround, you should be seeing something like this
 <p><img src="../img/texture_paint_13.jpg"></p>
 <p>And add the texture to your material:</p>
 <p><img src="../img/texture_paint_14.jpg"></p>
-<p>Now we can start using the Papermodel-plugin. It is located on the lowest Tab on the left:</p>
+<p>Now we can start using the Papermodel-plugin. It is located in the "Tool-Shelf" of the 3D-Window (<kbd class="kbd">T</kbd>)</p>
 <p><img src="../img/papermodel01.jpg"></p>
 <p>Click on "Unfold" and then on "Export Paper model".</p>
 <p>These are the settings in the export dialog:</p>
@@ -112,6 +112,22 @@ Textures: from Materials</p>
 and open the resulting image in Inkscape:</p>
 <p><img src="../img/inkscape_01.jpg"></p>
 <p>Now you only need to add the cutmarks for the Roland GX-24<br>
-You should also keep the margins according to this <a href="../img/A3_paperhead_template.svg">template</a>
+You should also keep the margins according to this <a href="../img/A3_paperhead_template.svg">template.</a>
 <p><img src="../img/inkscape_02.jpg"></p>
+<p>The three little circles are for the Vinyl-Cutter for recognizing the orientation of the print.</p>
+<p>A few tricks for extracting the necessary lines:<br>
+Select everything and ungroup it a few times until you have single objects (<kbd class="kbd">Shift</kbd>+<kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">U</kbd>)<br>
+Open the layer dialog and create layers for "cut", "fold", "marks", and "images".(<kbd class="kbd">Shift</kbd>+<kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">L</kbd>)<br>
+Select one of the bitmaps, hit <kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">F</kbd><br>
+Check "Search in": Properties<br>
+"Object type": Images<br>
+Click "Find". It should select all the bitmaps. Move them to their layer by right-clicking --> Move to layer<br>
+</p>
+<p>Select one of the cutlines<br>
+Open the XML-Editor (<kbd class="kbd">Shift</kbd>+<kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">X</kbd><br>
+Click on style and copy the attribute: stroke-width:1.06299222<br>
+Do a <kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">F</kbd><br> and search for the style attribute.<br>
+Do the same for the fold-lines.
+
+</p>
 </div></body></html>
