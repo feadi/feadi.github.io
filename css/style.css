@@ -218,3 +218,9 @@ div.desc {
     display: table;
     clear: both;
 }
+
+.center {
+    margin: auto;
+    width: 90%;
+
+}
