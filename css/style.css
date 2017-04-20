@@ -60,7 +60,7 @@ h3 {
 }
 h4 {
 	padding-top: -3px;
-	margin-bottom: -5px;
+	/*margin-bottom: -5px;*/
 	font-size: 18px;
 	font-weight: normal;
 	color: #000;
@@ -168,4 +168,53 @@ kbd {
 	white-space:nowrap;
 	box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 2px #fff inset;
 	border-radius:3px
+}
+
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
