@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Arqueologia 3D</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="media/castelo_montemor169.jpg">
+				<h1>Arqueologia 3D</h1>
+				<h3>Scan 3D, Modelação, Impressão 3D
+				</section>
+
+				<section>
+				<h3>Scan 3D</h3>
+
+				<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/dbb150d63af74f61ad0812e4542ff357/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+					<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    				<a href="https://sketchfab.com/models/dbb150d63af74f61ad0812e4542ff357?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Torre da Má Hora</a>
+   					 by <a href="https://sketchfab.com/carpetudo?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Morbase | Museu Virtual</a>
+    				on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+					</p>
+				</div>
+				</section>
+
+				<section>
+				<h3>Modelação </h3>
+				<div class="responsive">
+      			<div class="gallery">
+       				 <a href="../htm/blender_intro.htm">
+          				<img src="../img/Workshop_blender_intro.jpg" alt="Workshop_blender_intro" width="600" height="400">
+        			</a>
+      				</div>
+    			</div>
+				<a href="https://www.blender.org/">Blender</a>
+				</section>
+
+				<section>
+					<section>
+						<h3>Impressão 3D</h3>
+							<img src="media/reprap_knolling.jpg" height="500">
+					
+					</section>
+					<section data-background-video="media/modelacao3d_01.mp4" data-background-video-loop>
+							
+					</section>
+
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
