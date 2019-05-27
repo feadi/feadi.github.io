@@ -1,0 +1,5 @@
+info.txt
+nycresistor_01.jpeg
+nycresistor_02.jpeg
+nycresistor_03.jpeg
+nycresistor_04.jpeg
